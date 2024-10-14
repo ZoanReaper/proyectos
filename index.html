@@ -1,4 +1,203 @@
-<!DOCTYPE html>
-<html lang="es">
-Hola mundo
-</html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historieta Familia Sánchez</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <style>
+        .comic-panel {
+            background-color: #fff;
+            border: 2px solid #000;
+            box-shadow: 5px 5px 0px #000;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+        .image-placeholder {
+            background-color: #e0e0e0;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            color: #999;
+            transition: all 0.3s ease;
+        }
+        .image-placeholder:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+        .speech-bubble {
+            background-color: #f8f9fa;
+            border: 2px solid #000;
+            border-radius: 15px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .vacation-title {
+            font-family: 'Bangers', cursive;
+            font-size: 4rem;
+            color: #FF6B6B;
+            text-shadow: 3px 3px #FECA57;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+            transform: rotate(-2deg);
+            transition: transform 0.3s ease;
+        }
+        .vacation-title:hover {
+            transform: rotate(2deg) scale(1.05);
+        }
+        .vineta-title {
+            font-family: 'Bangers', cursive;
+            color: #4ECDC4;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .vineta-title2 {
+            font-family: 'Bangers', cursive;
+            color: #000000;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .group-1 {
+            background-color: #FFE66D;
+        }
+        .group-2 {
+            background-color: #4ECDC4;
+        }
+        .fin-text {
+            font-family: 'Bangers', cursive;
+            font-size: 3rem;
+            color: #FF6B6B;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <div class="container py-5">
+        <h1 class="text-center vacation-title">Historieta Familia Sánchez</h1>
+        
+        <div class="row">
+            <!-- Panel 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="comic-panel p-3 group-1">
+                    <h5 class="vineta-title">Viñeta 1: Introducción de la familia Sánchez</h5>
+                    <div class="image-placeholder mb-3">Imagen aquí</div>
+                    <div class="speech-bubble">
+                        <p><strong>Andrés:</strong> "¡Montañas! Sería genial hacer senderismo y escalar."</p>
+                    </div>
+                    <div class="speech-bubble">
+                        <p><strong>Valeria:</strong> "¡Nooo! Queremos ir a la playa, ¿verdad, Lucía?"</p>
+                    </div>
+                    <div class="speech-bubble">
+                        <p><strong>Lucía:</strong> "¡Sí, quiero jugar en la arena y nadar!"</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Panel 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="comic-panel p-3 group-1">
+                    <h5 class="vineta-title">Viñeta 2: Carlos y María muestran preocupación</h5>
+                    <div class="image-placeholder mb-3">Imagen aquí</div>
+                    <div class="speech-bubble">
+                        <p><strong>Carlos (en voz baja):</strong> "No podemos permitirnos un lugar costoso este año..."</p>
+                    </div>
+                    <div class="speech-bubble">
+                        <p><strong>María (asintiendo):</strong> "Tenemos que encontrar una solución que funcione para todos."</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Panel 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="comic-panel p-3 group-1">
+                    <h5 class="vineta-title">Viñeta 3: Carlos interviene asertivamente</h5>
+                    <div class="image-placeholder mb-3">Imagen aquí</div>
+                    <div class="speech-bubble">
+                        <p><strong>Carlos:</strong> "Chicos, entiendo que todos tienen ideas diferentes, pero también debemos pensar en lo que podemos permitirnos este año."</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Panel 4 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="comic-panel p-3 group-2">
+                    <h5 class="vineta-title2">Viñeta 4: Los niños expresan sus preferencias</h5>
+                    <div class="image-placeholder mb-3">Imagen aquí</div>
+                    <div class="speech-bubble">
+                        <p><strong>Andrés:</strong> "¡Quiero ir a las montañas! ¡Me encantaría hacer deportes extremos!"</p>
+                    </div>
+                    <div class="speech-bubble">
+                        <p><strong>Valeria:</strong> "¡Nosotras preferimos la playa! ¿Verdad, Lucía?"</p>
+                    </div>
+                    <div class="speech-bubble">
+                        <p><strong>Lucía:</strong> "Sí, quiero nadar y hacer castillos de arena."</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Panel 5 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="comic-panel p-3 group-2">
+                    <h5 class="vineta-title2">Viñeta 5: María busca una solución</h5>
+                    <div class="image-placeholder mb-3">Imagen aquí</div>
+                    <div class="speech-bubble">
+                        <p><strong>María:</strong> "Entiendo que todos tengan preferencias distintas. ¿Qué les parece si buscamos un lugar que tenga tanto playa como montaña?"</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Panel 6 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="comic-panel p-3 group-2">
+                    <h5 class="vineta-title2">Viñeta 6: Explicación de la situación económica</h5>
+                    <div class="image-placeholder mb-3">Imagen aquí</div>
+                    <div class="speech-bubble">
+                        <p><strong>Carlos:</strong> "Recuerden, este año no podemos gastar mucho dinero. Necesitamos un lugar accesible."</p>
+                    </div>
+                    <div class="speech-bubble">
+                        <p><strong>Andrés:</strong> "Bueno... mientras pueda hacer algo de senderismo, estoy bien."</p>
+                    </div>
+                    <div class="speech-bubble">
+                        <p><strong>Valeria:</strong> "¡Sí, con que haya playa, estamos contentas!"</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Panel 7 -->
+            <div class="col-md-6 col-lg-8">
+                <div class="comic-panel p-3">
+                    <h5 class="vineta-title">Viñeta 7: La familia llega a un acuerdo</h5>
+                    <div class="image-placeholder mb-3">Imagen aquí</div>
+                    <div class="speech-bubble">
+                        <p><strong>María:</strong> "¿Qué tal este lugar? Tiene una pequeña montaña cerca de la costa."</p>
+                    </div>
+                    <div class="speech-bubble">
+                        <p><strong>Carlos:</strong> "Y está dentro de nuestro presupuesto."</p>
+                    </div>
+                    <div class="speech-bubble">
+                        <p><strong>Lucía y Valeria (juntas):</strong> "¡Sí, suena perfecto!"</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Panel 8 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="comic-panel p-3">
+                    <h5 class="vineta-title">Viñeta 8: La familia feliz con el acuerdo</h5>
+                    <div class="image-placeholder mb-3">Imagen aquí</div>
+                    <p>La familia Sánchez se prepara para unas vacaciones equilibradas, llenas de momentos de aventura y relax.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="fin-text">Fin</div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
